@@ -173,6 +173,10 @@ class Orders(Stream):
 class Products(Stream):
     name = "products"
 
+class Categories(Stream):
+    name = "categories"
+    replication_method = "FULL_TABLE"
+    replication_key = None
 
 class Coupons(Stream):
     name = "coupons"
@@ -188,5 +192,6 @@ STREAMS = {
     'products': Products,
     'coupons': Coupons,
     'customers': Customers,
-    'orders': Orders
+    'orders': Orders,
+    'categories': Categories
 }
