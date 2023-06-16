@@ -123,7 +123,7 @@ def main():
             client=bigcommerce,
             catalog=catalog,
             state=args.state,
-            start_date=datetime.now()
+            start_date=datetime.datetime.now()
         )
 
 
