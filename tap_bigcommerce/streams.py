@@ -187,11 +187,16 @@ class Coupons(Stream):
 class Customers(Stream):
     name = "customers"
 
+class ProductsAttribute(Stream):
+    name = "products_attribute"
+    
+
 
 STREAMS = {
     'products': Products,
     'coupons': Coupons,
     'customers': Customers,
     'orders': Orders,
-    'categories': Categories
+    'categories': Categories,
+    'products_attribute': ProductsAttribute
 }
